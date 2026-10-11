@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакты — CreateHub</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">⚙</div>
+      Create<span>Hub</span>
+    </a>
+    <div class="menu" id="menu">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О сервере</a>
+      <a href="howto.html">Как играть</a>
+      <a href="pass.html">Проходка</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacts.html" class="active">Контакты</a>
+    </div>
+    <a href="pass.html" class="btn btn-primary btn-sm">Получить проходку</a>
+    <button class="burger">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="center">
+        <h2 class="section-title">Свяжись с нами</h2>
+        <p class="section-sub">Мы всегда на связи и рады помочь новым игрокам. Присоединяйся к нашему сообществу!</p>
+      </div>
+
+      <div class="contacts" style="margin-top:40px">
+        <div class="contact-card">
+          <div class="card-icon">💬</div>
+          <h4>Discord</h4>
+          <p>Основная площадка общения, поддержка и анонсы ивентов.</p>
+          <button class="btn btn-primary btn-sm" onclick="alert('Ссылка на Discord будет добавлена позже!')">Присоединиться</button>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon">📧</div>
+          <h4>Email</h4>
+          <p>Для деловых предложений и вопросов сотрудничества.</p>
+          <button class="btn btn-outline btn-sm" onclick="alert('support@createhub.ru')">Написать</button>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon">🎮</div>
+          <h4>IP сервера</h4>
+          <p>Скопируй IP и добавь сервер в список в Minecraft.</p>
+          <button class="btn btn-outline btn-sm" onclick="copyIP()">play.createhub.ru</button>
+        </div>
+      </div>
+
+      <div class="cta" style="margin-top:60px">
+        <h2>Вступай в CreateHub уже сегодня</h2>
+        <p>Сотни игроков, бесконечные возможности мода Create и дружное сообщество ждут именно тебя.</p>
+        <a href="pass.html" class="btn btn-primary">Получить проходку</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div>
+      <div class="logo"><div class="logo-mark">⚙</div>Create<span>Hub</span></div>
+      <p>Инженерный Minecraft-сервер с модом Create. Строй, автоматизируй, изобретай вместе с нами.</p>
+    </div>
+    <div>
+      <h5>Навигация</h5>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О сервере</a></li>
+        <li><a href="howto.html">Как играть</a></li>
+        <li><a href="pass.html">Проходка</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Помощь</h5>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">Правила</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Сервер</h5>
+      <ul>
+        <li><a onclick="copyIP()">IP: play.createhub.ru</a></li>
+        <li><a>Версия: 1.20.1</a></li>
+        <li><a>Мод: Create</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 CreateHub. Все права защищены. Не связан с Mojang AB.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
