@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Как играть — CreateHub</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">⚙</div>
+      Create<span>Hub</span>
+    </a>
+    <div class="menu" id="menu">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О сервере</a>
+      <a href="howto.html" class="active">Как играть</a>
+      <a href="pass.html">Проходка</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+    <a href="pass.html" class="btn btn-primary btn-sm">Получить проходку</a>
+    <button class="burger">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <h2 class="section-title">Как начать играть</h2>
+      <p class="section-sub">Три простых шага — и ты уже строишь свою первую фабрику на CreateHub.</p>
+
+      <div class="steps" style="margin-bottom:70px">
+        <div class="step">
+          <h4>Получи проходку</h4>
+          <p>Перейди на страницу «Проходка», выбери подходящий тариф и получи доступ к серверу в течение пары минут.</p>
+        </div>
+        <div class="step">
+          <h4>Установи сборку</h4>
+          <p>Скачай наш модпак в Discord или через лаунчер. В нём уже есть Create и все нужные дополнения.</p>
+        </div>
+        <div class="step">
+          <h4>Подключись к серверу</h4>
+          <p>Открой Minecraft, выбери сборку CreateHub и добавь сервер <b>play.createhub.ru</b> в список.</p>
+        </div>
+      </div>
+
+      <h3 style="font-size:24px;font-weight:800;margin-bottom:20px">Системные требования</h3>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Минимальные</h3>
+          <p>CPU: 4 ядра • ОЗУ: 8 ГБ (выделить 4 ГБ) • Java 17 • ~4 ГБ на диске</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Рекомендуемые</h3>
+          <p>CPU: 6+ ядер • ОЗУ: 16 ГБ (выделить 6 ГБ) • SSD • Java 17</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎮</div>
+          <h3>Моды в сборке</h3>
+          <p>Create, Create Crafts & Additions, JEI, Sodium, JourneyMap и другие оптимизационные моды.</p>
+        </div>
+      </div>
+
+      <div class="ip-box" style="margin-top:40px;display:block;text-align:center;padding:18px" onclick="copyIP()">
+        IP сервера: <b>play.createhub.ru</b> • нажми, чтобы скопировать
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div>
+      <div class="logo"><div class="logo-mark">⚙</div>Create<span>Hub</span></div>
+      <p>Инженерный Minecraft-сервер с модом Create. Строй, автоматизируй, изобретай вместе с нами.</p>
+    </div>
+    <div>
+      <h5>Навигация</h5>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О сервере</a></li>
+        <li><a href="howto.html">Как играть</a></li>
+        <li><a href="pass.html">Проходка</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Помощь</h5>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">Правила</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Сервер</h5>
+      <ul>
+        <li><a onclick="copyIP()">IP: play.createhub.ru</a></li>
+        <li><a>Версия: 1.20.1</a></li>
+        <li><a>Мод: Create</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 CreateHub. Все права защищены. Не связан с Mojang AB.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
