@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Получить проходку — CreateHub</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">⚙</div>
+      Create<span>Hub</span>
+    </a>
+    <div class="menu" id="menu">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О сервере</a>
+      <a href="howto.html">Как играть</a>
+      <a href="pass.html" class="active">Проходка</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+    <a href="pass.html" class="btn btn-primary btn-sm">Получить проходку</a>
+    <button class="burger">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="center">
+        <h2 class="section-title">Получить <span style="color:var(--orange-500)">проходку</span></h2>
+        <p class="section-sub">Выбери удобный формат доступа к серверу CreateHub. Все тарифы включают доступ к общему миру и Discord-сообществу.</p>
+      </div>
+
+      <div class="plans" style="margin-top:40px">
+        <div class="plan">
+          <h3>Гость</h3>
+          <p style="color:var(--gray-500);font-size:14px">Попробовать сервер</p>
+          <div class="price">0 ₽<small>/ навсегда</small></div>
+          <ul>
+            <li>Доступ к серверу на 3 дня</li>
+            <li>Общий мир и чат</li>
+            <li>Доступ к Discord</li>
+            <li>1 регион для базы</li>
+          </ul>
+          <button class="btn btn-outline" onclick="alert('Гостевой доступ выдается в нашем Discord!')">Получить бесплатно</button>
+        </div>
+
+        <div class="plan featured">
+          <div class="plan-tag">ПОПУЛЯРНЫЙ</div>
+          <h3>Инженер</h3>
+          <p style="color:var(--gray-500);font-size:14px">Полный доступ к серверу</p>
+          <div class="price">199 ₽<small>/ месяц</small></div>
+          <ul>
+            <li>Постоянный доступ к серверу</li>
+            <li>5 регионов для баз</li>
+            <li>Команды /home, /tpa, /back</li>
+            <li>Приоритет в очереди</li>
+            <li>Роль «Инженер» в Discord</li>
+            <li>Участие во всех ивентах</li>
+          </ul>
+          <button class="btn btn-primary" onclick="alert('Оплата будет доступна в нашем Discord!')">Получить проходку</button>
+        </div>
+
+        <div class="plan">
+          <h3>Магнат</h3>
+          <p style="color:var(--gray-500);font-size:14px">Максимум возможностей</p>
+          <div class="price">499 ₽<small>/ месяц</small></div>
+          <ul>
+            <li>Всё из тарифа «Инженер»</li>
+            <li>Неограниченные регионы</li>
+            <li>Собственный варп</li>
+            <li>Цветной ник в чате</li>
+            <li>Доступ к бета-фичам</li>
+            <li>Роль «Магнат» в Discord</li>
+          </ul>
+          <button class="btn btn-outline" onclick="alert('Оплата будет доступна в нашем Discord!')">Получить проходку</button>
+        </div>
+      </div>
+
+      <div class="cta" style="margin-top:60px">
+        <h2>Не уверен, какой тариф выбрать?</h2>
+        <p>Загляни в наш Discord — администрация поможет подобрать подходящий вариант и ответит на любые вопросы.</p>
+        <a href="contacts.html" class="btn btn-primary">Перейти в Discord</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div>
+      <div class="logo"><div class="logo-mark">⚙</div>Create<span>Hub</span></div>
+      <p>Инженерный Minecraft-сервер с модом Create. Строй, автоматизируй, изобретай вместе с нами.</p>
+    </div>
+    <div>
+      <h5>Навигация</h5>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О сервере</a></li>
+        <li><a href="howto.html">Как играть</a></li>
+        <li><a href="pass.html">Проходка</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Помощь</h5>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">Правила</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Сервер</h5>
+      <ul>
+        <li><a onclick="copyIP()">IP: play.createhub.ru</a></li>
+        <li><a>Версия: 1.20.1</a></li>
+        <li><a>Мод: Create</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 CreateHub. Все права защищены. Не связан с Mojang AB.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
