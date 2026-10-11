@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CreateHub — Minecraft сервер с модом Create</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">⚙</div>
+      Create<span>Hub</span>
+    </a>
+    <div class="menu" id="menu">
+      <a href="index.html" class="active">Главная</a>
+      <a href="about.html">О сервере</a>
+      <a href="howto.html">Как играть</a>
+      <a href="pass.html">Проходка</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+    <a href="pass.html" class="btn btn-primary btn-sm">Получить проходку</a>
+    <button class="burger">☰</button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="badge"><span class="dot"></span> Сервер онлайн • 24/7</div>
+        <h1>Инженерный Minecraft<br>с модом <em>Create</em></h1>
+        <p class="lead">CreateHub — это сервер для тех, кто любит строить, автоматизировать и изобретать. Шестерёнки, конвейеры, поезда, механизмы — здесь твоя фантазия превращается в реальность.</p>
+        <div class="hero-actions">
+          <a href="pass.html" class="btn btn-primary">Получить проходку</a>
+          <a href="howto.html" class="btn btn-outline">Как подключиться</a>
+        </div>
+        <div class="ip-box" onclick="copyIP()">
+          <span>play.createhub.ru</span>
+          <span class="copy-label" id="ip-hint">нажми, чтобы скопировать</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="gear-big"></div>
+        <div class="float-card c1">👥 120+ игроков <small>сейчас в сети</small></div>
+        <div class="float-card c2">🚂 Поезда и логистика <small>с модом Create</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--gray-50);">
+    <div class="container">
+      <div class="stats">
+        <div class="stat"><b>500+</b><span>игроков</span></div>
+        <div class="stat"><b>1.20.1</b><span>версия Minecraft</span></div>
+        <div class="stat"><b>99.9%</b><span>аптайм</span></div>
+        <div class="stat"><b>24/7</b><span>поддержка</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="center">
+        <h2 class="section-title">Почему <span style="color:var(--orange-500)">CreateHub</span>?</h2>
+        <p class="section-sub">Мы создали сервер, на котором хочется играть долго: стабильность, дружное сообщество и максимум возможностей мода Create.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon">⚙</div>
+          <h3>Мод Create</h3>
+          <p>Полная версия Create с дополнениями: поезда, схемы, жидкостная логистика и сотни механизмов.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🛡</div>
+          <h3>Анти-грифер</h3>
+          <p>Приватные территории, роли, защита от воровства и разрушений. Твой прогресс в безопасности.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3>Ивенты и квесты</h3>
+          <p>Еженедельные конкурсы построек, гонки на поездах и коллективные проекты для всего сервера.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <h3>Дружное комьюнити</h3>
+          <p>Активный Discord, взаимопомощь и совместные мегапроекты — от фабрик до целых городов.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💎</div>
+          <h3>Стабильные обновления</h3>
+          <p>Мы часто обновляем моды, добавляем новые фишки и всегда слушаем пожелания игроков.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Мощное железо</h3>
+          <p>Выделенный сервер без лагов даже при больших механизмах и десятках игроков онлайн.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--gray-50);">
+    <div class="container">
+      <div class="center">
+        <h2 class="section-title">Что есть на сервере</h2>
+        <p class="section-sub">Основной контент и активности, которые ждут тебя в CreateHub.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card">
+          <div class="card-icon">🏭</div>
+          <h3>Фабрики и заводы</h3>
+          <p>Стройте автоматические линии от добычи до готовой продукции.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚄</div>
+          <h3>Железные дороги</h3>
+          <p>Соединяйте города поездами Create и перевозите грузы между базами.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏙</div>
+          <h3>Города игроков</h3>
+          <p>Объединяйтесь в кооперативы и стройте собственные поселения.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏆</div>
+          <h3>Соревнования</h3>
+          <p>Конкурсы на самую эффективную машину и красивое строение.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta">
+        <h2>Готов начать инженерное приключение?</h2>
+        <p>Получи проходку и присоединяйся к сотням игроков, которые уже строят свой идеальный мир.</p>
+        <a href="pass.html" class="btn btn-primary">Получить проходку</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div>
+      <div class="logo"><div class="logo-mark">⚙</div>Create<span>Hub</span></div>
+      <p>Инженерный Minecraft-сервер с модом Create. Строй, автоматизируй, изобретай вместе с нами.</p>
+    </div>
+    <div>
+      <h5>Навигация</h5>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О сервере</a></li>
+        <li><a href="howto.html">Как играть</a></li>
+        <li><a href="pass.html">Проходка</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Помощь</h5>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">Правила</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Сервер</h5>
+      <ul>
+        <li><a onclick="copyIP()">IP: play.createhub.ru</a></li>
+        <li><a>Версия: 1.20.1</a></li>
+        <li><a>Мод: Create</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 CreateHub. Все права защищены. Не связан с Mojang AB.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
